@@ -10,7 +10,7 @@ class QrScan extends Controller
     {
         $user = auth()->user(); 
 
-        $url = route('dashboard', ['user' => $user->id]);
+        $url = route('rating.page', ['user' => $user->id]);
 
         $qrCode = QrCode::size(300)->generate($url);
 

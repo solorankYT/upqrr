@@ -26,7 +26,7 @@
                 <h4>Recent Ratings</h4>
                 <ul>
                     @foreach ($ratings as $rating)
-                        <li>
+                        <li class="mb-2 border-b pb-2">
                             <strong>Rating:</strong> {{ $rating->rating }} / 5
                             <br>
                             <strong>Comment:</strong> {{ $rating->comment ?? 'No comment' }}
